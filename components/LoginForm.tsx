@@ -57,9 +57,9 @@ const LoginForm = () => {
               className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600"
             >
               {showPassword ? (
-                <EyeClosed className="h-5 w-5" />
-              ) : (
                 <Eye className="h-5 w-5" />
+              ) : (
+                <EyeClosed className="h-5 w-5" />
               )}
             </button>
           </div>

@@ -90,7 +90,6 @@ export default function Sidebar() {
           })}
         </nav>
 
-        {/* Secondary Navigation */}
         <div className="mt-8">
           <nav className="space-y-1">
             {secondaryNavItems.map((item) => (
