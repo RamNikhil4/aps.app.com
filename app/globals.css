@@ -1,0 +1,213 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Layout backgrounds */
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-card: #ffffff;
+  --bg-elevated: #f4f4f5; /* zinc-100 */
+  --bg-input: #ffffff;
+  --bg-hover: #f4f4f5;
+
+  /* Borders */
+  --border-primary: #e4e4e7; /* zinc-200 */
+  --border-secondary: #f4f4f5; /* zinc-100 */
+
+  /* Text */
+  --text-primary: #18181b; /* zinc-900 */
+  --text-secondary: #52525b; /* zinc-600 */
+  --text-tertiary: #a1a1aa; /* zinc-400 */
+  --text-muted: #71717a; /* zinc-500 */
+
+  /* Severity icon backgrounds (light) */
+  --bg-pink-icon: #fdf2f8;
+  --bg-orange-icon: #fff7ed;
+  --bg-yellow-icon: #fefce8;
+  --bg-blue-icon: #eff6ff;
+
+  /* Active filter pill */
+  --bg-active-nav: rgba(20, 184, 166, 0.08);
+  --text-active-nav: #0f766e;
+  --icon-active-nav: #0d9488;
+
+  /* Sidebar user hover */
+  --bg-user-hover: #f4f4f5;
+
+  /* Table */
+  --bg-thead: rgba(250, 250, 250, 0.8);
+  --bg-thead-sticky: #fafafa;
+  --bg-row-hover: rgba(250, 250, 250, 0.6);
+  --divide-table: #e4e4e7;
+  --divide-body: #f4f4f5;
+
+  /* Progress bar track */
+  --bg-progress-track: #f4f4f5;
+
+  /* Filter dropdown */
+  --bg-dropdown: #ffffff;
+  --border-dropdown: #e4e4e7;
+  --bg-dropdown-hover: #f4f4f5;
+
+  /* Buttons */
+  --bg-btn-secondary: #ffffff;
+  --border-btn-secondary: #e4e4e7;
+  --text-btn-secondary: #3f3f46;
+  --bg-btn-secondary-hover: #f4f4f5;
+  --bg-btn-stop: #fef2f2;
+  --border-btn-stop: #fee2e2;
+  --text-btn-stop: #dc2626;
+  --bg-btn-stop-hover: #fecaca;
+
+  /* Status badges (light) */
+  --status-completed-text: #059669;
+  --status-completed-bg: #ecfdf5;
+  --status-completed-border: #a7f3d0;
+  --status-scheduled-text: #4f46e5;
+  --status-scheduled-bg: #eef2ff;
+  --status-scheduled-border: #c7d2fe;
+  --status-failed-text: #db2777;
+  --status-failed-bg: #fdf2f8;
+  --status-failed-border: #fbcfe8;
+
+  /* Active filter chip bg */
+  --bg-filter-active: rgba(20, 184, 166, 0.05);
+  --border-filter-active: rgba(20, 184, 166, 0.3);
+  --text-filter-active: #0f766e;
+
+  /* Search input */
+  --border-input: #e4e4e7;
+
+  /* Checkbox */
+  --border-checkbox: #d4d4d8;
+  --bg-checkbox: #ffffff;
+
+  /* Scan detail page */
+  --bg-console: #ffffff;
+  --bg-console-body: #fafafa;
+  --border-console: #e4e4e7;
+  --bg-tab-active: #ffffff;
+  --border-tab-active: #14b8a6;
+  --text-tab-active: #0f766e;
+  --text-tab-inactive: #71717a;
+  --bg-finding-card: #ffffff;
+  --border-finding-card: #e4e4e7;
+  --bg-step-circle: #f4f4f5;
+  --border-step-circle: #e4e4e7;
+  --text-step: #a1a1aa;
+  --bg-step-line: #e4e4e7;
+  --bg-statusbar: #fafafa;
+  --border-statusbar: #e4e4e7;
+}
+
+.dark {
+  /* Layout backgrounds */
+  --bg-primary: #0d1117;
+  --bg-secondary: #0d1117;
+  --bg-card: #161b22;
+  --bg-elevated: rgba(13, 17, 23, 0.6);
+  --bg-input: #0d1117;
+  --bg-hover: #1c2333;
+
+  /* Borders */
+  --border-primary: #1e2a3a;
+  --border-secondary: #1e2a3a;
+
+  /* Text */
+  --text-primary: #e4e4e7;
+  --text-secondary: #a1a1aa;
+  --text-tertiary: #71717a;
+  --text-muted: #71717a;
+
+  /* Severity icon backgrounds (dark) */
+  --bg-pink-icon: rgba(236, 72, 153, 0.15);
+  --bg-orange-icon: rgba(249, 115, 22, 0.15);
+  --bg-yellow-icon: rgba(234, 179, 8, 0.15);
+  --bg-blue-icon: rgba(59, 130, 246, 0.15);
+
+  /* Active nav */
+  --bg-active-nav: rgba(20, 184, 166, 0.15);
+  --text-active-nav: #2dd4bf;
+  --icon-active-nav: #2dd4bf;
+
+  /* Sidebar user hover */
+  --bg-user-hover: #161b22;
+
+  /* Table */
+  --bg-thead: rgba(13, 17, 23, 0.6);
+  --bg-thead-sticky: #0d1117;
+  --bg-row-hover: #1c2333;
+  --divide-table: #1e2a3a;
+  --divide-body: #1e2a3a;
+
+  /* Progress bar track */
+  --bg-progress-track: #0d1117;
+
+  /* Filter dropdown */
+  --bg-dropdown: #161b22;
+  --border-dropdown: #2d3748;
+  --bg-dropdown-hover: #1c2333;
+
+  /* Buttons */
+  --bg-btn-secondary: #161b22;
+  --border-btn-secondary: #2d3748;
+  --text-btn-secondary: #e4e4e7;
+  --bg-btn-secondary-hover: #1c2333;
+  --bg-btn-stop: rgba(239, 68, 68, 0.1);
+  --border-btn-stop: rgba(239, 68, 68, 0.2);
+  --text-btn-stop: #f87171;
+  --bg-btn-stop-hover: rgba(239, 68, 68, 0.2);
+
+  /* Status badges (dark) */
+  --status-completed-text: #34d399;
+  --status-completed-bg: rgba(16, 185, 129, 0.15);
+  --status-completed-border: rgba(16, 185, 129, 0.3);
+  --status-scheduled-text: #a1a1aa;
+  --status-scheduled-bg: rgba(161, 161, 170, 0.15);
+  --status-scheduled-border: rgba(161, 161, 170, 0.3);
+  --status-failed-text: #f472b6;
+  --status-failed-bg: rgba(236, 72, 153, 0.15);
+  --status-failed-border: rgba(236, 72, 153, 0.3);
+
+  /* Active filter chip bg */
+  --bg-filter-active: rgba(20, 184, 166, 0.1);
+  --border-filter-active: rgba(20, 184, 166, 0.3);
+  --text-filter-active: #2dd4bf;
+
+  /* Search input */
+  --border-input: #2d3748;
+
+  /* Checkbox */
+  --border-checkbox: #52525b;
+  --bg-checkbox: #0d1117;
+
+  /* Scan detail page */
+  --bg-console: #161b22;
+  --bg-console-body: #0d1117;
+  --border-console: #1e2a3a;
+  --bg-tab-active: transparent;
+  --border-tab-active: #2dd4bf;
+  --text-tab-active: #2dd4bf;
+  --text-tab-inactive: #71717a;
+  --bg-finding-card: #161b22;
+  --border-finding-card: #1e2a3a;
+  --bg-step-circle: #161b22;
+  --border-step-circle: #2d3748;
+  --text-step: #71717a;
+  --bg-step-line: #2d3748;
+  --bg-statusbar: #0d1117;
+  --border-statusbar: #1e2a3a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-inter);
+}
